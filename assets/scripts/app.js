@@ -161,7 +161,7 @@ class ProjectList {
     });
 
     list.addEventListener('dragover', (event) => {
-      if (event.dataTransfer.type[0] === 'text/plain') {
+      if (event.dataTransfer.types[0] === 'text/plain') {
         event.preventDefault();
       }
     });
